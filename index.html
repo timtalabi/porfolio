@@ -481,7 +481,7 @@
             </svg>
             <p>Click to upload<br>your headshot</p>
           </div>
-          <img id="headshot-img" src="" alt="Tim Talabi headshot" />
+<img id="headshot-img" src="headshot.jpg" alt="Tim Talabi headshot" style="display:block;" />          
         </div>
         <input type="file" id="photo-input" accept="image/*" />
         <span class="photo-hint">Professional Photo</span>
@@ -785,7 +785,6 @@
       const reader = new FileReader();
       reader.onload = function(e) {
         img.src = e.target.result;
-        frame.classList.add('has-photo');
       };
       reader.readAsDataURL(file);
     });
